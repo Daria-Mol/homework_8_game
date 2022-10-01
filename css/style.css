@@ -1,0 +1,159 @@
+@import "null.css";
+/* ============================================================================================================================= */
+/*====== Подключаемые Шрифты======= */
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+/*====================================== */
+
+.wrapper {
+	font-family: "Playfair Display";
+	padding: 5px;
+}
+[class*="__container"]{
+	max-width: 1230px;
+	margin: 0px auto;
+}
+
+.header {
+	margin: 0px 0px 15px 0px;
+	text-align: center;
+	line-height: 1.5;
+	font-size: 30px;
+	font-weight: 900;
+}
+
+
+/*============================================================*/
+.main {
+}
+.main_title {
+	text-align: center;
+	margin: 0px 0 10px 0;
+	font-size: 25px;
+}
+.game {
+	margin: 0px auto;
+	width: 900px;
+	max-height: 1200px;
+	border: 10px solid rgb(137, 3, 247);
+	background: url("../img/bg.jpg") 0 0/100% no-repeat;
+}
+.block{
+	background: url("../img/star.png") 0 0/contain ;	
+	visibility:hidden ;
+}
+.game_block1 {
+	width: 40px;
+	height: 40px;	
+	visibility: visible;
+	margin: 0px auto;
+}
+.game_block1:hover+.game_block2,
+.game_block2:hover{
+	visibility: visible;
+  }
+.game_block2 {
+	width: 200px;
+	height: 40px;
+	margin: 0px 0px 0px 420px;
+}
+.game_block2:hover+.game_block3,
+.game_block3:hover{
+	visibility: visible;
+  }
+.game_block3 {
+	width: 30px;
+	height: 50px;
+	margin: 0px 0px 0px 590px;
+	
+}
+.game_block3:hover+.game_block4,
+.game_block4:hover{
+	visibility: visible;
+  }
+.game_block4 {
+	width: 500px;
+	height: 30px;
+	margin: 0px 0px 0px 120px;
+	
+}
+
+.game_block5 {
+	width: 20px;
+	height: 120px;
+	margin: 0px 0px 0px 120px;
+	
+}
+.game_block4:hover+.game_block5,
+.game_block5:hover{
+	visibility: visible;
+  }
+.game_block6 {
+	width: 200px;
+	height: 20px;
+	margin: 0px 0px 0px 120px;
+}
+.game_block5:hover+.game_block6,
+.game_block6:hover{
+	visibility: visible;
+  }
+.game_block7 {
+	width: 15px;
+	height: 100px;
+	margin: 0px 0px 0px 305px;
+}
+.game_block6:hover+.game_block7,
+.game_block7:hover{
+	visibility: visible;
+  }
+.game_block8 {
+	width: 500px;
+	height: 15px;
+	margin: 0px 0px 0px 305px;
+}
+.game_block7:hover+.game_block8,
+.game_block8:hover{
+	visibility: visible;
+  }
+.game_block9 {
+	width: 10px;
+	height: 100px;
+	margin: 0px 0px 0px 795px;
+}
+.game_block8:hover+.game_block9,
+.game_block9:hover{
+	visibility: visible;
+  }
+.game_block10 {
+	width: 50px;
+	height: 50px;
+	margin: 0px 0px 0px 775px;
+}
+.game_block9:hover+.game_block10,
+.game_block10:hover{
+	visibility: visible;
+  }
+img{
+	width: 100%;
+
+}
+.game_win{
+	display: none;
+}
+
+.game_block10:hover+.game_win,
+.game_win:hover{
+	display: block;;
+  }
+
+
+
+/*================  FOOTER   ============================================*/
+.footer {
+	text-align: right;
+	font-family: Parisienne;
+	font-weight: 700;
+	font-size: 30px;
+	text-shadow: 3px 3px 5px rgb(148, 4, 243);
+}
